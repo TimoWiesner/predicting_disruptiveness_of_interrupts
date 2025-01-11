@@ -16,6 +16,6 @@ An example usage of the command would be (do-experiment nil t) for a run where t
 To see what exactly is happening (and for the human experiment run) the visibility of the experiment window needs to be set to t. By default the visibility is set to nil to not influence the collected data of the models. This can be done in the "experimentCooking.lisp" file by changing the value of the first declared variable *visible.
 
 ## Get the results
-After a run the collected data can be found in the data folder, where meta-files are created for every recipe (meta1 - meta8).
-## Side note: 
-LISP-commands need to be wrapped in brackets. Also false in LISP is represented as nil and true is represented as t.
+After a run the collected data can be found in the data folder, where meta-files are created for every recipe (meta1 - meta8). After a run, the data files need to be deleted or saved elsewhere to avoid errors in the data. If this is not done, the data from successive runs will be appended to the existing meta-files.
+### Side note: 
+LISP-commands in the console need to be wrapped in brackets. Also false in LISP is represented as nil and true is represented as t.
