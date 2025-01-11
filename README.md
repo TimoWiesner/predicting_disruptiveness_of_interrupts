@@ -10,10 +10,12 @@ Then the "experimentCooking.lisp" file can be loaded via the "Load ACT-R code" b
 
 ## Run the experiment
 After loading the experiment and the model, the experiment can be started via a command in the console. Simply use the "do-experiment" function. This function needs two parameters, the first one is a boolean parameter indicating whether a human (t) or the model (nil) is doing the task. The second parameter is also a boolean indicating whether the realistic robot (t) suggestions or the random robot (nil) suggestions are used.
+
 An example usage of the command would be (do-experiment nil t) for a run where the model is doing the task with realistic robot suggestions.
+
 To see what exactly is happening (and for the human experiment run) the visibility of the experiment window needs to be set to t. By default the visibility is set to nil to not influence the collected data of the models. This can be done in the "experimentCooking.lisp" file by changing the value of the first declared variable *visible.
 
 ## Get the results
 After a run the collected data can be found in the data folder, where meta-files are created for every recipe (meta1 - meta8).
-
-Side note: LISP-commands need to be wrapped in brackets. Also false in LISP is represented as nil and true is represented as t.
+## Side note: 
+LISP-commands need to be wrapped in brackets. Also false in LISP is represented as nil and true is represented as t.
