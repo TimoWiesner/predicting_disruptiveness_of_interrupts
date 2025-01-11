@@ -6,7 +6,7 @@ In the "ExcelCharts" folder the results of the separate experiment iterations ca
 ## Set up the experiment
 To set up the experiment ACT-R needs to be installed which can be found here -> http://act-r.psy.cmu.edu/software/ 
 The entire "cookingTaskModel" folder then needs to be dragged into the ACT-R mainfolder, after that ACT-R can be started.
-Then the "experimentCooking.lisp" file can be loaded via the "Load ACT-R code" button in the ACT-R interface. By default the more successful second model approach will be loaded. To load the this, the filepath inside the "experimentCooking.lisp" needs to changed to (load-act-r-model "ACT-R:cookingTaskModel;Model1.lisp").
+Then the "experimentCooking.lisp" file can be loaded via the "Load ACT-R code" button in the ACT-R interface. By default the more successful second model approach will be loaded. To load the first model approach this, the filepath inside the "experimentCooking.lisp" needs to changed to (load-act-r-model "ACT-R:cookingTaskModel;Model1.lisp").
 
 ## Run the experiment
 After loading the experiment and the model, the experiment can be started via a command in the console. Simply use the "do-experiment" function. This function needs two parameters, the first one is a boolean parameter indicating whether a human (t) or the model (nil) is doing the task. The second parameter is also a boolean indicating whether the realistic robot (t) suggestions or the random robot (nil) suggestions are used.
